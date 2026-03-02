@@ -6,7 +6,7 @@ function Courses() {
   return (
     <>
     <div className="Courses">
-      <h1>VEIW AND ADD YOUR TRIPS HERE...</h1>
+      <h1>VIEW AND ADD YOUR TRIPS HERE</h1>
       <Travel name="Travel Destination 1" />
       
       {/* Add more Travel components as needed */}

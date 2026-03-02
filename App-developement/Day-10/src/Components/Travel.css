@@ -17,7 +17,7 @@
 .trip-input {
   flex-grow: 1;
   padding: 5px;
-  
+
   font-size: 16px;
 }
 
@@ -35,25 +35,25 @@
   background-color: #0056b3;
 }
 
-h2 {
+.travel-container h2 {
   font-size: 24px;
   margin-bottom: 10px;
 }
 
-input[type="text"]{
+.travel-container input[type='text'] {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
   font-size: 16px;
 }
-input[type="number"] {
+.travel-container input[type='number'] {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
   font-size: 16px;
 }
 
-button {
+.travel-container button {
   background-color: #007bff;
   color: #fff;
   border: none;
@@ -63,26 +63,25 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.travel-container button:hover {
   background-color: #0056b3;
 }
 
-ul {
+.travel-container ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-li {
+.travel-container li {
   margin-bottom: 5px;
   font-size: 16px;
 }
 
-p {
+.travel-container p {
   font-size: 18px;
   font-weight: bold;
   margin-top: 20px;
 }
 
 /* You can add more styles as needed to match your design preferences. */
-

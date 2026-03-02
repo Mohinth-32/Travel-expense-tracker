@@ -3,7 +3,9 @@
 /* Style for the Courses component container */
 .Courses {
   background-color: #f0f0f0;
-  padding: 200px;
+  padding: 20px;
+  padding-top: 100px;
+  padding-left: 200px;
   text-align: center;
 }
 

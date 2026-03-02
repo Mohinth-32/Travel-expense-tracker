@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
-// import { Link } from 'react-router-dom';
 import { login } from '../redux/userSlice';
 import { useDispatch } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
-import './Login.css'
-import videoback from '../mountainbg.mp4';
+import './Login.css';
 function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -23,15 +21,16 @@ function Login() {
     }
     if (!password.trim()) {
       validationErrors.password = "Password is required";
-    } else if (password.length < 4) {
+    } else if (password.length < 8) {
       validationErrors.password = "Password should be at least 8 characters";
-    }
-    else{
-      dispatch(login(email))
-        nav('/admin-dashboard')
     }
 
     setErrors(validationErrors);
+
+    if (Object.keys(validationErrors).length === 0) {
+      dispatch(login(email));
+      nav('/admin-dashboard');
+    }
 
     
     
@@ -45,7 +44,7 @@ function Login() {
 
 
     
-    <div class="box">
+    <div className="box">
     <form className="form" onSubmit={handleSubmit}>
           <h2 className='header'>Login</h2>
         <div>
@@ -73,7 +72,7 @@ function Login() {
          
        </div>
           <Link to="/register">
-            <p class="group">Signup</p>
+            <p className="group">Signup</p>
           </Link>
         </form>
       </div>

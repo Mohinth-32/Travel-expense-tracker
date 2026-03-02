@@ -5,23 +5,21 @@ const FAQ = () => {
     // Define an array of FAQ items (questions and answers)
     const faqItems = [
         {
-            question: 'How do I refill my prescription?',
-            answer: 'You can refill your prescription by logging into your account on our website and following the prescription refill process.'
+            question: 'How do I add a new trip?',
+            answer: 'Navigate to the Trips page from the sidebar and enter your trip name, budget, and expenses to start tracking.'
         },
         {
-            question: 'What are your operating hours?',
-            answer: 'Our pharmacy is open from 9:00 AM to 6:00 PM, Monday to Friday, and 10:00 AM to 4:00 PM on Saturdays. We are closed on Sundays.'
+            question: 'How do I track my expenses?',
+            answer: 'Go to the Expenses page from the sidebar. You can add expense descriptions and amounts to keep track of your spending.'
         },
         {
-            question: 'What is Pharmacy Management?',
-            answer: 'Pharmacy management refers to the process of overseeing and optimizing the operations of a pharmacy, including inventory management, prescription filling, and patient services.'
+            question: 'How do I upload receipts?',
+            answer: 'Visit the Receipts page and use the file upload button to upload images of your receipts for record keeping.'
         },
         {
-            question: 'What Strategies Can Help Manage Medication Shortages?',
-            answer: 'Strategies include monitoring shortages, seeking alternative suppliers, and working with healthcare providers to find suitable substitutions.'
+            question: 'How is my remaining budget calculated?',
+            answer: 'Your remaining budget is automatically calculated by subtracting the total of all recorded expenses from your set budget.'
         },
-        
-        // Add more FAQ items as needed
     ];
 
     // Initialize state to keep track of which FAQ item is currently expanded
